@@ -21,32 +21,9 @@
 <suite name="ApiManager-features-test-suite">
     <parameter name="useDefaultListeners" value="false"/>
 
-
-    <test name="apim-integration-tests-api-common" preserve-order="true" parallel="false">
-        <classes>
-            <class name="org.wso2.am.integration.tests.other.AdvancedWebAppDeploymentConfig"/>
-            <class name="org.wso2.am.integration.tests.api.lifecycle.AddEditRemoveRESTResourceTestCase"/>
-            <class name="org.wso2.am.integration.tests.api.lifecycle.PluggableVersioningStrategyTestCase"/>
-            <class name="org.wso2.am.integration.tests.api.lifecycle.ChangeAPIEndPointURLTestCase"/>
-        </classes>
-    </test>
-
     <test name="apim-integration-tests-api-application-lifecycle" preserve-order="true" parallel="false">
         <classes>
             <class name="org.wso2.am.integration.tests.other.APIApplicationLifeCycleTestCase"/>
         </classes>
     </test>
-
-    <test name="apim-integration-tests-api-lifecycle" preserve-order="true" parallel="false">
-        <classes>
-            <class name="org.wso2.am.integration.tests.api.lifecycle.AccessibilityOfBlockAPITestCase"/>
-            <class name="org.wso2.am.integration.tests.api.lifecycle.AccessibilityOfDeprecatedOldAPIAndPublishedCopyAPITestCase"/>
-            <class name="org.wso2.am.integration.tests.api.lifecycle.AccessibilityOfOldAPIAndCopyAPIWithOutReSubscriptionTestCase"/>
-            <class name="org.wso2.am.integration.tests.api.lifecycle.AccessibilityOfOldAPIAndCopyAPIWithReSubscriptionTestCase"/>
-            <class name="org.wso2.am.integration.tests.api.lifecycle.AccessibilityOfRetireAPITestCase"/>
-            <!--&lt;!&ndash;https://wso2.org/jira/browse/TA-970&ndash;&gt;-->
-            <!--<class name="org.wso2.am.integration.tests.api.lifecycle.AddNewHandlerAndInvokeAPITestCase"/>-->
-        </classes>
-    </test>
-
 </suite>
